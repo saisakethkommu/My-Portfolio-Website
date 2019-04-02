@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>My Courses</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/tables.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+	
+   
+    
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg " id="navbar">
+    <a class="navbar-brand" ><img src="Images/BannerLogo.jpg" alt="Banner Logo" id="MyLogo" ></a>
+          
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="MyCourses.html">My Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Survey</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="features container">
+        <h1 class="ml5">
+            <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters letters-left">My</span>
+            
+            <span class="letters letters-right">Course List</span>
+            <span class="line line2"></span>
+            </span>
+        </h2>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+							// Wrap every letter in a span
+                        anime.timeline({loop:false})
+                    .add({
+                        targets: '.ml5 .line',
+                        opacity: [0.5,1],
+                        scaleX: [0, 1],
+                        easing: "easeInOutExpo",
+                        duration: 700
+                    }).add({
+                        targets: '.ml5 .line',
+                        duration: 600,
+                        easing: "easeOutExpo",
+                        translateY: function(e, i, l) {
+                        var offset = -0.625 + 0.625*2*i;
+                        return offset + "em";
+                        }
+                    }).add({
+                        targets: '.ml5 .ampersand',
+                        opacity: [0,1],
+                        scaleY: [0.5, 1],
+                        easing: "easeOutExpo",
+                        duration: 600,
+                        offset: '-=600'
+                    }).add({
+                        targets: '.ml5 .letters-left',
+                        opacity: [0,1],
+                        translateX: ["0.5em", 0],
+                        easing: "easeOutExpo",
+                        duration: 600,
+                        offset: '-=300'
+                    }).add({
+                        targets: '.ml5 .letters-right',
+                        opacity: [0,1],
+                        translateX: ["-0.5em", 0],
+                        easing: "easeOutExpo",
+                        duration: 600,
+                        offset: '-=600'
+                    }).add({
+                        targets: '.ml5',
+                        
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                        delay: 1000
+                    }).add({
+                        targets: '.ml5 .line',
+                        opacity:0
+                        });
+
+						</script>
+        <script>
+                //javascript code begins
+        
+                function getRows() {
+                //function to retrieve XML data from features.xml using AJAX
+        
+                    var xmlhttp = new XMLHttpRequest(); //variable to hold the xmlhttprequest to get the xml data
+                     //asynchronously transfers data whenever it is fired
+                     xmlhttp.onreadystatechange = function() {
+                        //go into if structure if request is finished and response is ready AND status is OK
+                        if (this.readyState == 4 && this.status == 200) {
+                            //upon request success function showResult is called
+                            showResult(this);
+                        }
+                    };
+                    xmlhttp.open("GET", "MyCoursework.xml", true); //opens features.xml xml data file      
+                    xmlhttp.send(null); //null is sent to the server 
+                }
+        
+                function showResult(xmlhttp) {
+                //function takes the AJAX response as parameter
+        
+                    var xmlDOC = xmlhttp.responseXML.documentElement; //variable to hold the xml document
+                    
+                    //calls function removeWhitespace function and passe the xmlDOC variable
+                    removeWhitespace(xmlDOC); 
+        
+                    //gets the tbody element by id bodyRows and holds it in outputResult variable
+                    var outputResult = document.getElementById("bodyRows"); 
+                    
+                    //gets the Course tag from the xml file and holds it in variable rowData
+                    var rowData = xmlDOC.getElementsByTagName("Course"); 
+                    
+                    //passes variables rowData and outputResult to addXMLrows function
+                    addXMLrows(rowData, outputResult); 
+                }
+        
+                function addXMLrows(xmlNodes, tableNode) {
+                //function that takes the XML data and outputResult variable parameters. Builds table by row using XML data
+        
+                    var table = tableNode.parentNode; //variable to hold the parent node of table node
+                    var newRow, newCell, x; // initial variable creation of newRow, newCell, and x which will be given values
+        
+                    console.log("Number of nodes: " + xmlNodes.length); //logs the number of nodes from the length of the xml nodes in the console
+        
+                    //iterates through all the xml nodes
+                    for (x = 0; x < xmlNodes.length; x++) {
+        
+                        //inserts row for the table node and assigns it to variable newRow
+                        newRow = tableNode.insertRow(x); 
+        
+                        //class name OddRow or EvenRow are assigned depending on the modulus operation for css background color property
+                        newRow.className = (x%2) ? "OddRow" : "EvenRow";
+        
+                        //inner for loop iterates through all child nodes of the current node (current feature node)
+                        for (y = 0; y < xmlNodes[x].childNodes.length; y++) {
+                            //table data cell created for each iteration
+                            newCell = newRow.insertCell(newRow.cells.length); //this variable inserts a cell into the newRow variable
+                            
+                            // inserts the data from xml file into newCell if the cell exists depending on the row and column
+                            if (xmlNodes[x].childNodes[y].firstChild) {
+                                //inserts the row and column as a cell
+                                newCell.innerHTML = xmlNodes[x].childNodes[y].firstChild.nodeValue; 
+                            }
+                            else {
+                                newCell.innerHTML = "-"; //adds a hyphen into the html of each newCell created
+                            }
+                            console.log("cell: " + newCell); //logs the cell's new cell into the console whenever a new cell is created
+                        }
+                    }
+                    table.appendChild(tableNode); // appends the built cells and rows to the table
+                }
+        
+        
+        
+                function removeWhitespace(xml) {
+                //function that removes all non-visible characters from the XML, which allows easier parsing
+                    var loopIndex; //variable to hold the index of the for loop
+        
+                    //for loop to iterate through xml data
+                    for (loopIndex = 0; loopIndex < xml.childNodes.length; loopIndex++) {
+                        var currentNode = xml.childNodes[loopIndex]; //variable to hold current node iterated in xml file
+                        if (currentNode.nodeType == 1) {
+        
+                            //passes currentNode to removeWhitespace function if current node type is equal to 1
+                            removeWhitespace(currentNode);
+                        }
+        
+                        //
+                        if (!(/\S/.test(currentNode.nodeValue)) && (currentNode.nodeType == 3)) {
+                            xml.removeChild(xml.childNodes[loopIndex--]);
+                        }
+                    }
+                }
+        
+                //function getRows is called when the page is loaded
+                window.addEventListener("load", getRows, false);
+        
+        
+        
+        
+        
+            </script>
+		<table id="maintable">
+            <thead>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Course Link</th>
+                </tr>
+            </thead>
+			<tbody id="bodyRows"></tbody>
+		</table>
+
+
+	</div>
+
+<p>Note: The above table is generated by retrieving the XML data asynchronously</p>
+
+
+
+
+<div class="footer">
+  <div class="container">
+    <p>
+      Disclaimer: “This website is developed as an educational project”, "Images on this page are designed by myself". 
+    </p>
+    <p>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+  </div>
+  <p id="lastModified"> </p>
+</div>
+
+
+ 
+
+
+<script>
+  
+
+
+
+
+
+
+ 
+document.getElementById("lastModified").innerHTML = "Last Modified " + document.lastModified; //changes text on footer to the last modified time and date of the webpage
+
+</script>
+
+<script>$.validate({});</script>
+
+
+</body>
+</html>

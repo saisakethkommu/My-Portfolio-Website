@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/tables.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+	<title>Home</title>
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg " id="navbar">
+    <a class="navbar-brand" ><img src="Images/BannerLogo.jpg" alt="Banner Logo" id="MyLogo" ></a>
+          
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="MyCourses.html">My Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Survey</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="banner" class="img-responsive"></div>
+    <div class="bg-text">
+      <h1 onmouseover="Expand(this)" onmouseout="unExpand(this)">Saketh's Portfolio Website</h1>
+    </div>
+
+
+<div class="container1">
+    <h1 class="ml5">
+        <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters letters-left">Featured</span>
+        
+        <span class="letters letters-right">Work</span>
+        <span class="line line2"></span>
+        </span>
+    </h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+          // Wrap every letter in a span
+                    anime.timeline({loop:false})
+                .add({
+                    targets: '.ml5 .line',
+                    opacity: [0.5,1],
+                    scaleX: [0, 1],
+                    easing: "easeInOutExpo",
+                    duration: 700
+                }).add({
+                    targets: '.ml5 .line',
+                    duration: 600,
+                    easing: "easeOutExpo",
+                    translateY: function(e, i, l) {
+                    var offset = -0.625 + 0.625*2*i;
+                    return offset + "em";
+                    }
+                }).add({
+                    targets: '.ml5 .ampersand',
+                    opacity: [0,1],
+                    scaleY: [0.5, 1],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=600'
+                }).add({
+                    targets: '.ml5 .letters-left',
+                    opacity: [0,1],
+                    translateX: ["0.5em", 0],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=300'
+                }).add({
+                    targets: '.ml5 .letters-right',
+                    opacity: [0,1],
+                    translateX: ["-0.5em", 0],
+                    easing: "easeOutExpo",
+                    duration: 600,
+                    offset: '-=600'
+                }).add({
+                    targets: '.ml5',
+                    
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                }).add({
+                    targets: '.ml5 .line',
+                    opacity:0
+                    });
+
+        </script>
+
+  <div class="container">
+  <div class="row justify-content-md-center">
+    
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <img class="card-img-top" src="Images/PetClinic.jpg" alt="Pet_Clinic">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://github.com/saisakethkommu/Pet_Clinic">Pet Clinic</a></h5>
+              <p class="card-text">Angular based Web Application which allows the users to make appointments at a Pet Clinic</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <img class="card-img-top" src="Images/FileSharingSystem.jpg" alt="File_Sharing_system">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://github.com/saisakethkommu/File-Sharing-System">File Sharing System</a></h5>
+              <p class="card-text">File Sharing System which allows the users to upload and download the files</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <img class="card-img-top" src="Images/CrimesDC.jpg" alt="D.C_Crimes" style="height:230px;">
+            <div class="card-body">
+                <h5 class="card-title"><a href="#">Data Visualization of Crimes in Washington D.C</a></h5>
+                <p class="card-text">Data Visualization of Crimes in Washington D.C</p>
+              </div>
+          </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="footer">
+  <div class="container">
+    <p>
+      Disclaimer: “This website is developed as an educational project”, "Images on this page are designed by myself". 
+    </p>
+    <p>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+  </div>
+  <p id="lastModified"> </p>
+</div>
+
+
+ 
+  <script>
+  
+
+  $("#submit").click(function(){ //calls a function when the submit button is clicked
+    $("#dialog").dialog(); //calls the JQuery UI Dialog class when the user clicks the submit button
+    $("#formItems").trigger('reset'); //calls a JQuery function that resets the form field when the function is called
+  });
+
+  </script>
+
+<script>
+  
+
+  function Expand(header){ //function called when user hovers over the page header
+  header.classList.add('mouseOverHeader');  //addes a CSS Class list to the header
+}
+
+function unExpand(header){ //function called when user hovers out of the page header
+  header.classList.remove('mouseOverHeader'); //removes a CSS Class list from the header
+}
+
+
+
+
+ 
+document.getElementById("lastModified").innerHTML = "Last Modified " + document.lastModified; //changes text on footer to the last modified time and date of the webpage
+
+</script>
+
+<script>$.validate({});</script>
+
+
+</body>
+</html>

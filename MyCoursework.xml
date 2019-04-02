@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MyCourses>
+ 
+  <Course>
+    <CourseID>SWE 619</CourseID>
+    <CourseName>Object-Oriented Software Specification and Construction</CourseName>
+    <CourseLink>https://cs.gmu.edu/~pammann/619.html</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 637</CourseID>
+    <CourseName>Software Testing</CourseName>
+    <CourseLink>https://cs.gmu.edu/~offutt/classes/637/</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 632</CourseID>
+    <CourseName>User Interface Design and Development</CourseName>
+    <CourseLink>https://cs.gmu.edu/~offutt/classes/637/</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 632</CourseID>
+    <CourseName>User Interface Design and Development</CourseName>
+    <CourseLink>https://s3.us-east-1.amazonaws.com/blackboard.learn.xythos.prod/5a30bcf95ea52/14616939?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27SWE%2520632%2520Class%2520Syllabus.pdf&amp;response-content-type=application%2Fpdf&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20190401T063855Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=21600&amp;X-Amz-Credential=AKIAIL7WQYDOOHAZJGWQ%2F20190401%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=c5d589b7aea884d4138f24fb39bd8621c0fb116d0ec35c7ec6b80bcbd4bfebed</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 645</CourseID>
+    <CourseName>Component-Based Software Development</CourseName>
+    <CourseLink>https://cs.gmu.edu/media/syllabi/Fall2018/SWE_645DubeyV001.pdf</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 642</CourseID>
+    <CourseName>Software Engineering for the World Wide Web</CourseName>
+    <CourseLink>https://cs.gmu.edu/media/syllabi/Spring2017/SWE_642DubeyV.pdf</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 622</CourseID>
+    <CourseName>Distributed Systems</CourseName>
+    <CourseLink>https://cs.gmu.edu/media/syllabi/Fall2015/SWE622WheelerD.html</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 621</CourseID>
+    <CourseName>Software Modeling and Architectural Design</CourseName>
+    <CourseLink>https://cs.gmu.edu/media/syllabi/Fall2017/SWE_621GomaaH.pdf</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>SWE 625</CourseID>
+    <CourseName>Software Project Management</CourseName>
+    <CourseLink>https://cs.gmu.edu/media/syllabi/Fall2017/SWE_625NidifferK.pdf</CourseLink>
+  </Course>
+  <Course>
+    <CourseID>INFS 640</CourseID>
+    <CourseName>Introduction to Electronic Commerce</CourseName>
+    <CourseLink>C:\Users\Dell\Desktop\MyPortfolio\NewPortFolio\INFS640.html</CourseLink>
+  </Course>
+</MyCourses>
